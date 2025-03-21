@@ -50,12 +50,6 @@ while (contador >= 1) {
 /*
 function inverterTexto() {
     let texto = prompt("Digite uma palavra para inverter:");
-   
-    if (!texto || typeof texto !== "string") {
-        console.error("Erro: Entrada inválida! Insira uma palavra válida.");
-        return;
-    }
-
 
     let letrasSeparadas = texto.split("");
     let textoInvertido = letrasSeparadas.reverse().join("");
@@ -75,13 +69,7 @@ inverterTexto();
 
 /*
 function contarCaracteres() {
-    let texto = prompt("Digite uma string para contar os caracteres:");
-
-
-    if (!texto) {
-        console.error("Erro: Nenhuma entrada detectada!");
-        return;
-    }
+    let texto = prompt("Digite uma string para contar os caracteres:"
 
 
     let quantidade = texto.length;
@@ -108,12 +96,6 @@ const carro = {
 
 /*
 function mensagemPersonalizada(nome, mensagem = "Olá") {
-    if (!nome) {
-        alert("Por favor, insira seu nome!");
-        return;
-    }
-
-
     let saudacao = `${mensagem}, ${nome}! Tenha um excelente dia!`;
     document.getElementById("mensagem").innerText = saudacao;
 }
@@ -135,13 +117,6 @@ function calcularMedia() {
 
 
    
-    if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
-        alert("Por favor, insira três números válidos.");
-        return;
-    }
-
-
-   
     let media = (num1 + num2 + num3) / 3;
 
 
@@ -159,4 +134,89 @@ for (let i = 1; i <= 20; i++) {
     }
 }
 */
+
+
+/*
+function verificarSinal() {
+    let numero = parseFloat(prompt("digite o seu numero:"))
+
+if (isNaN(numero)) {
+alert("digite um numero normal arrombado")
+}
+
+else if (numero > 0 ) {
+ alert("o numero é positivo")
+ 
+}  else if (numero < 0 ) {
+    alert("O numero é negativo")
+ 
+} else {
+    ("O numero é 0");
+  }
+
+
+}
+
+verificarSinal()
+*/
+
+/*
+function converterTemperatura() {
+let celcius = prompt("digite sua temperatura em celcius") 
+
+console.log((celcius *1.8)+32.)
+
+}
+
+converterTemperatura()
+*/
+
+/*
+let numero = 100;
+let soma = 0;
+while ( numero >= 0) {
+
+soma += numero;
+numero--;
+}
+
+console.log("a soma de todo os numeros é", soma)
+*/
+
+
+/*
+function substituirPalavra(palavraO, palavraN) {
+    palavra1 =palavra2;
+    alert("a palavra" + palavraO + "foi substituida por" + palavraN, ".");
+
+}
+let palavra1 = prompt("digite uma palavra");
+let palavra2 = prompt("digite a palavra para substituir a outra");
+substituirPalavra(palavra1, palavra2);
+*/
+
+/*
+function contarCaracteres() {
+    let texto = prompt("Digite uma string para contar os caracteres:")
+    let quantidade = texto.length;
+    console.log(`A string digitada tem ${quantidade} caracteres.`);
+   
+    if ( quantidade>10) {
+        console.log(" a string tem mais de 10 caracrtes")
+    }
+}
+contarCaracteres()
+*/
+
+let frutas = [];
+
+for (let i = 0; i < 5; i++) {
+    let fruta = prompt(`Digite o nome da fruta ${i + 1}:`);
+    frutas.push(fruta);
+}
+
+alert("A terceira fruta digitada foi: " + frutas[2])
+
+
+
 
